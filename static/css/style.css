@@ -1,0 +1,86 @@
+/* static/css/style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+}
+
+#map-container {
+    height: 100vh;
+    background-color: #e8eef1;
+    overflow: hidden;
+}
+
+#country-panel {
+    height: 100vh;
+    overflow-y: auto;
+    background-color: white;
+    border-left: 1px solid #ddd;
+}
+
+.country {
+    fill: #34495e;
+    stroke: white;
+    stroke-width: 0.5;
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.country:hover {
+    fill: #3498db;
+}
+
+.country.active {
+    fill: #e74c3c;
+}
+
+.market-item {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.market-name {
+    font-weight: bold;
+}
+
+.positive {
+    color: #27ae60;
+}
+
+.negative {
+    color: #e74c3c;
+}
+
+.news-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.news-source {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+}
+
+.news-headline {
+    font-weight: bold;
+    margin: 0.25rem 0;
+}
+
+.news-time {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+}
+
+@media (max-width: 992px) {
+    #map-container {
+        height: 50vh;
+    }
+    
+    #country-panel {
+        height: auto;
+        max-height: 50vh;
+        border-left: none;
+        border-top: 1px solid #ddd;
+    }
+}
